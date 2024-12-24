@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fcd1d1; 
+    color: #5d3e6d; 
+}
+
+header {
+    background: #fcb2c3;
+    color: #5d3e6d; 
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff5e99; 
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; 
+}
+
+section {
+    padding: 2rem;
+}
+
+
+.jumbotron {
+    position: relative;
+    text-align: center;
+    color: #ff5e99; 
+    height: 100vh;
+    overflow: hidden;
+}
+
+.jumbotron h1 {
+    font-size: 4em;
+    margin-top: 0;
+    padding: 20px;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20%; 
+}
+
+.jumbotron p {
+    font-size: 1.5em; 
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%; 
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #fcb2c3; 
+    color: #5d3e6d; 
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Adjust for 10px squares */
+    gap: 600px;
+}
+
+.gallery img {
+    width: 600px; 
+    height: 600px; 
+    object-fit: cover; 
+    border: 10px solid #ff5e99; 
+    transition: transform 0.2s; 
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 10px;
+    }
+}
